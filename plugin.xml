@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.php.core.goalEvaluatorFactories">
+         <factory class="complete.evaluator.CompleteGoalEvaluatorFactory"
+             priority="100">
+         </factory>
+   </extension>
+   
+   <extension point="org.eclipse.php.core.completionStrategyFactories">
+     <factory class="complete.assist.StrategyFactory"/>
+  </extension>
+
+  <extension point="org.eclipse.php.core.completionContextResolvers">
+     <resolver class="complete.assist.ContextResolver"/>
+  </extension>
+
+</plugin>
